@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Output Issues
-              run: echo "${{ github.event}}"
+              run: echo "${{ toJson(github.event)}}"
     condition-issues-trigger:
         runs-on: ubuntu-latest
         steps:
