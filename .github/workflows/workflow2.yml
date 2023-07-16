@@ -1,5 +1,5 @@
 name: WorkFlow 2
-on: issues
+on: [issues, workflow_dispatch]
 jobs:
     issues-trigger:
         runs-on: ubuntu-latest
