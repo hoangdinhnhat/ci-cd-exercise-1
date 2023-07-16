@@ -6,3 +6,8 @@ jobs:
         steps:
             - name: Output Issues
               run: echo "${{ github.event}}"
+    condition-issues-trigger:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Output Issues
+              run: echo "${{ github.event_name == 'issues' && github.event}}"
