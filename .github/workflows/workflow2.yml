@@ -10,4 +10,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Output Issues
-              run: echo "${{ github.event_name == 'issues' && github.event}}"
+              run: echo "${{ github.event_name == 'issues' && toJson(github.event)}}"
